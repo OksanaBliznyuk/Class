@@ -11,6 +11,9 @@ class Animal {
   showAnimal() {
     console.log("horse");
   }
+  showAnimal() {
+    console.log("Kitty");
+  }
 }
 //Object
 const animal1 = new Animal(
@@ -20,6 +23,12 @@ const animal1 = new Animal(
   "lightbrown",
   "img"
 );
+
+const animal2 = new Animal("Cheetan", "Kitty", "Iran", "Black", "imgUrl");
+
 // function
 console.log(animal1);
-animal1.showAnimal();
+animal1.showAnimal("horse");
+
+console.log(animal2);
+animal2.showAnimal("Kitty");
